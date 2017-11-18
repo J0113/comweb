@@ -1,7 +1,37 @@
-<div class="w3-bar w3-blue w3-card-2 w3-left-align w3-large w3-center">
+<!-- Menu Kleine Schermen -->
+<button id="menubutton" class="w3-bar-item w3-button w3-xxxlarge w3-hide-large" onclick="openmobilemenu()">&#9776;</button>
+
+<nav class=" w3-bar-block w3-animate-left w3-blue w3-hide-large" id="mobilemenu">
+  <span onclick="closemobilemenu()" class="w3-button w3-display-topright w3-large w3-blue w3-hover-light-blue w3-border w3-round-small w3-padding-large">X</span>
+  <br>
+  <div class="w3-bar w3-blue w3-card-2 w3-left-align w3-large w3-center">
+    <a class="w3-bar-item w3-padding-large"><b><br>Menu</b></a><hr>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue">Thuis</a><hr>
+    <a href="over.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue">Over Jolle Repair</a><hr>
+    <a href="iphone.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue">iPhone Reparaties</a><hr>
+    <a href="probleem.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue">Telefoon & Computer Problemen</a><hr>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue">Contact</a><br>
+  </div>
+</nav>
+
+<!-- Menu Grote Schermen -->
+<div class="w3-bar w3-blue w3-card-2 w3-left-align w3-large w3-center w3-hide-medium w3-hide-small">
   <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" style="width:20%">Thuis</a>
   <a href="over.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" style="width:20%">Over Jolle Repair</a>
   <a href="iphone.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" style="width:20%">iPhone Reparaties</a>
   <a href="probleem.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" style="width:20%">Telefoon & Computer Problemen</a>
   <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" style="width:20%">Contact</a>
 </div>
+
+<!-- JavaScript Menu Kleine Schermen -->
+<script>
+closemobilemenu();
+function openmobilemenu() {
+    document.getElementById("mobilemenu").style.display = "block";
+    document.getElementById("menubutton").style.display = "none";
+}
+function closemobilemenu() {
+    document.getElementById("mobilemenu").style.display = "none";
+    document.getElementById("menubutton").style.display = "block";
+}
+</script>
