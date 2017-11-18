@@ -55,6 +55,17 @@
 <!-- Einde Webpagina -->
 <!-- Javascript voor het menu -->
 <script>w3.includeHTML();</script>
+<script>
+closemobilemenu();
+function openmobilemenu() {
+    document.getElementById("mobilemenu").style.display = "block";
+    document.getElementById("menubutton").style.display = "none";
+}
+function closemobilemenu() {
+    document.getElementById("mobilemenu").style.display = "none";
+    document.getElementById("menubutton").style.display = "block";
+}
+</script>
 
 </body>
 </html>
