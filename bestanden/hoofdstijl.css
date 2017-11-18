@@ -128,3 +128,13 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.bgprocessor { 
+    /* Afbeelding */
+    background-image: url("../fotos/processor.jpg");
+
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
