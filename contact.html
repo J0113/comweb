@@ -69,9 +69,12 @@
 
 <!-- Einde Webpagina -->
 <!-- Javascript voor het menu -->
-<script>w3.includeHTML();</script>
 <script>
-closemobilemenu();
+    w3.includeHTML(function() {
+        closemobilemenu();});
+    }
+</script>
+<script>
 function openmobilemenu() {
     document.getElementById("mobilemenu").style.display = "block";
     document.getElementById("menubutton").style.display = "none";
@@ -80,7 +83,7 @@ function closemobilemenu() {
     document.getElementById("mobilemenu").style.display = "none";
     document.getElementById("menubutton").style.display = "block";
 }
-</script>
+</script>  
 
 </body>
 </html>
